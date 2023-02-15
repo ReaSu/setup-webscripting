@@ -1,4 +1,5 @@
 <?php
-echo "<h1>Hi</h1>";
+echo xdebug_info();
 phpinfo();
+
 ?>
