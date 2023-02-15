@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./app:/app
+  php:
+    build:
+      context: .
+      dockerfile:  php.dockerfile
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./tmp/xdebug:/tmp/xdebug
+      - ./php.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./app:/app
