@@ -1,6 +1,6 @@
 ## Was ist das?
 
-Das ist ein Setup für PHP in Containern. Es ersetzt XAMPP. Debugging mit Xdebug in VSCodium[^1] ist konfiguriert, dafür ist das launch.json.
+Das ist ein Setup für PHP in Containern. Es ersetzt XAMPP. Debugging mit Xdebug in VSCodium[^1] ist konfiguriert, dafür ist das .vscode/launch.json.
 
 ## Voraussetzung: 
 Installation von Docker und Docker-Compose. Anleitung im Internet.
